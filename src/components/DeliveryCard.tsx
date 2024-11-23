@@ -8,10 +8,7 @@ interface Props {
 }
 
 export function DeliveryCard({ delivery }: Props) {
-  const formattedDate = new Date(delivery.dataPrevisaoEntrega).toLocaleDateString();
-
-  console.log(delivery);
-  
+  const formattedDate = new Date(delivery.dataPrevisaoEntrega).toLocaleDateString();  
   
   return (
     <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
